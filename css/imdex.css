@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
-body{font-family: 'Noto Sans KR', sans-serif; font-size: 16px; background-color: #000;}
-.wrap{max-width: 1100px; margin: auto; clear: both;}
+body{font-family: 'Noto Sans KR', sans-serif; font-size: 16px;}
+#contain{width: 100%; background-color: #000;}
+.wrap{max-width: 1100px; margin: auto; clear: both; overflow: hidden;}
 
 .main{background-image: url(../images/bg.jpg); background-position: center; background-repeat: no-repeat; color: #fff; text-align: center;position: relative; overflow: auto; height: 817px;}
 header{}
@@ -25,23 +26,21 @@ section .left{float: left;}
 section .right{float: right;}
 section h3{font-size: 40px;padding-bottom: 30px;}
 
-.sect4{}
+.sect4{box-sizing: border-box;}
 .sect4 h4{font-size: 30px; text-align: center;padding-bottom: 61px; font-weight: bold;}
 .sect4 ul{width: 75%; margin: auto;}
-.sect4 ul li{ position: relative; width: 90%; margin-bottom: 10px; cursor: pointer;}
+.sect4 ul li{ position: relative; width: 90%; margin-bottom: 10px; cursor: pointer; }
 .sect4 ul li .q{background-color: #303030;width: 100%; font-size: 25px;padding: 20px;}
-.sect4 ul li .a{ background-color: #303030; width: 100%; font-size: 18px; padding: 20px;border-top: 1px solid #e2e2e2; display: none;}
+.sect4 ul li .a{ background-color: #303030; width: 100%; font-size: 18px; padding: 20px; border-top: 1px solid #e2e2e2; display: none;}
 .sect4 ul li .a p{padding-bottom: 20px;line-height: 1.4em;}
-.sect4 ul li .icon{position: absolute; top: 20px; right: 0;z-index: 5;}
-/*
+.sect4 ul li .icon{position: absolute; top: 20px; right: 0; z-index: 5;}
 .ro{
-    transform: -webkit-rotate(40deg),scale(1.5);
-    transform: -o-rotate(40deg),scale(1.5);
-    transform: -moz-rotate(40deg),scale(1.5);
-    transform: rotate(40deg),scale(1.5);
-    transition: transform 1s ease;
+    transform: -webkit-rotate(45deg);
+    transform: -o-rotate(45deg);
+    transform: -moz-rotate(45deg);
+    transform: rotate(45deg);
     }
-*/
+.ro{transition: transform 1s ease;}
 
 footer{color: #757575; padding: 30px; position: relative;}
 footer a{color: #757575; text-decoration: none;}
@@ -53,7 +52,7 @@ footer .link ul li{padding-bottom: 20px;}
 footer .link ul li:hover{text-decoration: underline;}
 
 footer .fp2{padding: 20px 0;}
- p{line-height: 1.4em;}
+footer p{line-height: 1.4em;}
 footer select{margin-top: 20px; background-color: #303030; color: #fff; width: 150px;padding: 10px; padding-left: 50px;}
 footer .fas.fa-globe{position: absolute; bottom: 40px; left: 50px; font-size: 20px; color: #fff;}
 
@@ -61,16 +60,34 @@ footer .fas.fa-globe{position: absolute; bottom: 40px; left: 50px; font-size: 20
 
 
 @media only screen and (max-width: 660px) {
-    header button{ width: 83px; height: 35px; background-color: #e50914; color: #fff; border: 0; border-radius: 5px; font-family: 'Noto Sans KR'; position: absolute; top: 25px; right: 30px; z-index: 5;}
+    header h1 img{width: 110px;}
+    header button{ width: 73px; height: 35px; background-color: #e50914; color: #fff; border: 0; border-radius: 5px; font-family: 'Noto Sans KR'; position: absolute; top: 20px; right: 30px; z-index: 5;}
     .headerTxt{padding: 10px; box-sizing: border-box;}
     .headerTxt h2{font-size: 2.5em; padding-top: 200px;}
     .headerTxt form input{width: 80%; height: 50px; padding-left: 10px; font-size: 16px;}
     .headerTxt form button{position: absolute; top: 0; right: 7%; width: 30%; height: 56px; background-color: #e30813; color: #fff; border: 0; font-size: 14px;}
     section {box-sizing: border-box;}
     section .txt{width: 100%; text-align: center;}
-    section .img img{width: 450px; margin: auto;}
-    .sect4 ul{width: 75%; margin: auto;}
+    section .img img{width: 100%; margin: auto;}
+    .sect4 ul{width: 80%; margin: auto;margin-left: 6%;}
     .sect4 ul li{ position: relative; width: 92%; margin-bottom: 10px; cursor: pointer;}
-    .sect4 ul li .icon{position: absolute; top: 20px; right: -20px;z-index: 5;}
-    .sect4 ul li .q{font-size: 16px;}
+    .sect4 ul li .icon{position: absolute; top: 20px; right: -37px ;z-index: 5;}
+    .sect4 ul li .q{font-size: 16px; padding-left: 20px; padding-right: 30px;}
+    .sect4 ul li .a{width: 103.8%;}
+    footer .link{font-size: 14px;}
+    footer p{  font-size: 14px;}
+}
+
+@media only screen and (max-width: 414px) {
+.sect4 ul{width: 80%; margin: auto;margin-left: 7%;}
+}
+
+
+@media only screen and (max-width: 320px) {
+    header h1 img{width: 120px;}
+    header button{ width: 63px; height: 35px; background-color: #e50914; color: #fff; border: 0; border-radius: 5px; font-family: 'Noto Sans KR'; position: absolute; top: 20px; right: 30px; z-index: 5;}
+    .headerTxt h2{font-size: 30px;}
+    .headerTxt p:nth-child(2){font-size: 20px;}
+    section h3{font-size: 30px;}
+    .sect4 ul{width: 80%; margin: auto;margin-left: 5.5%;}
 }
