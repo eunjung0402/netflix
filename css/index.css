@@ -73,7 +73,7 @@ footer .fas.fa-globe{position: absolute; bottom: 40px; left: 50px; font-size: 20
     .sect4 ul li{ position: relative; width: 92%; margin-bottom: 10px; cursor: pointer;}
     .sect4 ul li .icon{position: absolute; top: 20px; right: -37px ;z-index: 5;}
     .sect4 ul li .q{font-size: 16px; padding-left: 20px; padding-right: 30px;}
-    .sect4 ul li .a{width: 103.8%;}
+    .sect4 ul li .a{width: 103.5%;}
     footer .link{font-size: 14px;}
     footer p{  font-size: 14px;}
 }
